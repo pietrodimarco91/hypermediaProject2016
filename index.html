@@ -33,34 +33,17 @@
     <!-- Google Maps APIs -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
 
-
-
-
-
-
         <script>
             $(function(){
 
-                // load the header
                 $(".header").load( "header.html");
 
                 $(".main").load( "home.html", function() {
-
                     $.getScript('js/pageManager.js', function() {
-                        // load dynamic links (index.html)
-                        clickPageLinks();
+                        click();
                     });
-
                 });
-                // load footer
-                $(".footer").load("footer.html", function() {
-
-                    $.getScript('js/staticCalls.js', function() {
-                        getInfo('1');
-                    });
-
-
-                });
+                $(".footer").load("footer.html");
             });
         </script>
 

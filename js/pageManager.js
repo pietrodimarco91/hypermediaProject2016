@@ -6,8 +6,7 @@ $('#menu_nav li:not(#submenu)').on('click', function(){
 });
 
 
-// manages click in pages + menu highlighting management
-function clickPageLinks() {
+function click() {
 
     // this event is fired everytime you click a link or when pressing back/forward browser buttons
     window.onpopstate = function() {
@@ -49,74 +48,8 @@ function manager(args) {
     // for istance, single_class.html can contains different informations based on
     // different values of special
     var special = parts[1];
-
-    // enable script for calls to external php
-    $.getScript('js/ajaxCalls.js', function(){
-        // load the page dinamycally inside the template
-        $( ".main" ).load(page+'.html', function() {
-
-            //************** SPECIFIC PAGE FUNCTIONS ****************//
-            // after loading the whole page we should load the page manager for links inside the main div, this is because
-            // the callback function
-            switch (page) {
-                case 'home':
-                    // scripts for "static" content
-                    $.getScript('js/staticCalls.js', function() {
-                        getInfo('2');
-                        getInfo('3');
-                        getInfo('4');
-                        getInfo('5');
-                    });
-
-                    clickPageLinks();
-
-                    break;
-                case 'categories':
-                    getCategorie(function () { clickPageLinks(); });
-                    break;
-                case 'classes_al':
-                    getCorsi(function () { clickPageLinks(); });
-                    break;
-                case 'classes_lvl':
-                    getCorsiPerLivello(function () { clickPageLinks(); });
-                    break;
-                case 'classes_cat':
-                    getCorsiCat(special,function () { clickPageLinks(); });
-                    break;
-                case 'single_class':
-                    getCorso(special,function () { clickPageLinks(); });
-                    break;
-                case 'trainers':
-                    getIstruttori(function () { clickPageLinks(); });
-                    break;
-                case 'single_trainer':
-                    getIstruttore(special,function () { clickPageLinks(); });
-                    $.getScript("js/externalAPIs.js", function() {
-                        getTweets();
-                    });
-                    break;
-                case 'pricing':
-                    $.getScript("js/externalAPIs.js", function() {
-                        facebookInit();
-                        facebookPrepare();
-                    });
-                    break;
-                case 'contact':
-                    $.getScript("js/externalAPIs.js", function() {
-                        initializeMap();
-                    });
-                    getInfo('6');
-                    break;
-                default:
-                    clickPageLinks();
-            }
-            //************** END SPECIFIC PAGE FUNCTIONS ***********//
-
-            // scroll to top when loading a new page
-            window.scrollTo(0,0);
-        });
-
-    });
+     $( ".main" ).load(page+'.html');
+    window.scrollTo(0,0);
 
 
 }
