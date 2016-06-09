@@ -6,8 +6,8 @@ body {
 }
 
 body {
-    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #F3F3F3;
+    background-color: white;
+    color: #337ab7;
 }
 
 .img-portfolio {
@@ -19,13 +19,20 @@ body {
 }
 
 /* Home Page Carousel */
-
-.slider {
-    width: 100%;
-    margin: 50px auto;
-}
 a{
     color: #337ab7;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: large;
+}
+
+.navbar-right{
+    margin-top: 20px;
+}
+
+.navbar-custom{
+    background-color: darkgray ;
+    min-height: 90px;
+
 }
 
 .nav-slider{
@@ -34,11 +41,12 @@ a{
 }
 
 .slick-slide {
-    margin: 0px 20px;
+    margin: 20px 20px;
 }
 
 .slick-slide img {
     width: 100%;
+
 }
 
 
