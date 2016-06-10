@@ -169,7 +169,9 @@ input.search-form:hover {
 }
 
 
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 .img-portfolio {
     margin-bottom: 30px;
