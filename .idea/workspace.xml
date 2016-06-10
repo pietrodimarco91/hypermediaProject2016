@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6a7651d-fa43-4590-b352-69a05da3857a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/connect_db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/getDeviceCat.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deviceCat.html" afterPath="$PROJECT_DIR$/deviceCat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ajaxCalls.js" afterPath="$PROJECT_DIR$/js/ajaxCalls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/listener.js" afterPath="$PROJECT_DIR$/js/listener.js" />
     </list>
     <ignored path="timwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +57,8 @@
       <file leaf-file-name="ajaxCalls.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ajaxCalls.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="225">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc;n#getDeviceCat#0" expanded="false" />
               </folding>
@@ -227,9 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -320,6 +311,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -776,6 +770,7 @@
       <workItem from="1465549402109" duration="16408000" />
       <workItem from="1465579128077" duration="3471000" />
       <workItem from="1465585326045" duration="158000" />
+      <workItem from="1465589664254" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="new html">
       <created>1465335245419</created>
@@ -795,7 +790,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60868000" />
+    <option name="totallyTimeSpent" value="60912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1186,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ajaxCalls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="225">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc;n#getDeviceCat#0" expanded="false" />
           </folding>
