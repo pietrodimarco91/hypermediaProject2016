@@ -19,50 +19,24 @@ function handle(args) {
     var parts = args.split('&');
     var page = parts[0];
     var special = parts[1];
-    $.getScript('js/ajaxCalls.js', function(){
-        $( ".main" ).load(page+'.html', function() {
+    $.getScript('js/ajaxCalls.js', function () {
+        $(".main").load(page + '.html', function () {
             switch (page) {
                 case 'home':
-                    clickPageLinks();
                     break;
-                case 'categories':
-                    getCategorie(function () { clickPageLinks(); });
-                    break;
-                case 'classes_al':
-                    getCorsi(function () { clickPageLinks(); });
-                    break;
-                case 'classes_lvl':
-                    getCorsiPerLivello(function () { clickPageLinks(); });
-                    break;
-                case 'classes_cat':
-                    getCorsiCat(special,function () { clickPageLinks(); });
-                    break;
-                case 'single_class':
-                    getCorso(special,function () { clickPageLinks(); });
-                    break;
-                case 'trainers':
-                    getIstruttori(function () { clickPageLinks(); });
-                    break;
-                case 'single_trainer':
-                    getIstruttore(special,function () { clickPageLinks(); });
-                    $.getScript("js/externalAPIs.js", function() {
-                        getTweets();
+                case 'deviceCat':
+                    console.log(page);
+                    var categoria='';
+                    categoria+=page;
+                    getDeviceCat(categoria, function () {
+                        click();
                     });
-                    break;
-                case 'pricing':
-                    $.getScript("js/externalAPIs.js", function() {
-                        facebookInit();
-                        facebookPrepare();
-                    });
-                    break;
-                case 'contact':
-                    $.getScript("js/externalAPIs.js", function() {
-                        initializeMap();
-                    });
-                    getInfo('6');
                     break;
                 default:
-                    clickPageLinks();
+                    click();
             }
-    window.scrollTo(0,0);
+            window.scrollTo(0, 0);
+        });
+    });
 }
+
