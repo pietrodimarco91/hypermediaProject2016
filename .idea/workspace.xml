@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6a7651d-fa43-4590-b352-69a05da3857a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e6a7651d-fa43-4590-b352-69a05da3857a" name="Default" comment="" />
     <ignored path="timwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -770,7 +768,7 @@
       <workItem from="1465549402109" duration="16408000" />
       <workItem from="1465579128077" duration="3471000" />
       <workItem from="1465585326045" duration="158000" />
-      <workItem from="1465589664254" duration="44000" />
+      <workItem from="1465589664254" duration="288000" />
     </task>
     <task id="LOCAL-00001" summary="new html">
       <created>1465335245419</created>
@@ -790,7 +788,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60912000" />
+    <option name="totallyTimeSpent" value="61156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
