@@ -23,6 +23,7 @@ function handle(args) {
         $(".main").load(page + '.html', function () {
             switch (page) {
                 case 'home':
+                    click();
                     break;
                 case 'deviceCat':
                     console.log(page);
@@ -32,6 +33,8 @@ function handle(args) {
                         click();
                     });
                     break;
+                case 'categories':
+                    getCategorie(special);
                 default:
                     click();
             }
