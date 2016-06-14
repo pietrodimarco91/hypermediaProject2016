@@ -62,3 +62,26 @@ function getCategorie(categoria,callback){
     });
 
 }
+
+function getAllDevices(callback){
+
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getAllDevices.php",
+        success: function(response) {
+            var res=JSON.parse(response);
+            var allDevices_img;
+            for(var i=0;i<res.length;i++){
+                allDevices_img=res[i].image;
+                $(".allDevices_img"+i).html(allDevices_img);
+            }
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+
+}

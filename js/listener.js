@@ -38,6 +38,11 @@ function handle(args) {
                     getCategorie(special, function () {
                         click();
                     });
+                case 'allDevices':
+                    getAllDevices(function () {
+                        click();
+                    });
+                    
                 default:
                     click();
             }

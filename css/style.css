@@ -41,6 +41,12 @@ body {
     color: #fff;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+}
+
 input.search-form{
     background: transparent;
     border: 0 none;
