@@ -31,3 +31,34 @@ function getDeviceCat(categoria,callback){
     });
 
 }
+
+
+function getCategorie(categoria,callback){
+
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCategorie.php", //Relative or absolute path to file.php file
+        data: {categoria:categoria},
+        success: function(response) {
+            var categorie=JSON.parse(response);
+            var title;
+            var categoria;
+            var html;
+            for(var i=0;i<categorie.length;i++){
+                title=categorie[i].title;
+                categoria=categorie[i].categoria;
+                html=categorie[i].html;
+                $(".mainTitle").html(title);
+                $(".categories"+i).html(categoria);
+                $(".html"+i).html(html);
+            }
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+
+}
