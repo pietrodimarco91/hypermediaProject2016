@@ -10,6 +10,7 @@ body {
 }
 
 
+
 /*NAVBAR*/
 
 #header .search{
@@ -126,6 +127,7 @@ input.search-form:hover {
 }
 
 .navbar .navbar-nav .dropdown-menu {
+    transition: color 500ms, background-color 300ms;
     background-color: rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
@@ -140,10 +142,12 @@ input.search-form:hover {
 
 .navbar .navbar-nav .dropdown-menu:before{
     position: absolute;
+    transition: color 500ms, background-color 300ms;
     top:0;
 }
 
 .navbar .navbar-nav .dropdown-menu > li > a {
+    transition: color 500ms, background-color 300ms;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 10px 15px;
@@ -153,6 +157,7 @@ input.search-form:hover {
 .navbar .navbar-nav > li:hover > a,
 .navbar .navbar-nav > li:focus > a,
 .navbar .navbar-nav > li.active > a {
+    transition: color 500ms, background-color 300ms;
     background-color: #d43f3a;
     color: #fff;
 }
@@ -160,11 +165,13 @@ input.search-form:hover {
 .navbar .navbar-nav .dropdown-menu > li:hover > a,
 .navbar .navbar-nav .dropdown-menu > li:focus > a,
 .navbar .navbar-nav .dropdown-menu > li.active > a {
+    transition: color 500ms, background-color 300ms;
     background-color: #d43f3a;
     color: #fff;
 }
 
 .navbar .navbar-nav .dropdown-menu > li> a {
+    transition: color 500ms, background-color 300ms;
     background-color: rgba(0, 0, 0, 0.1);
     color: #fff;
 }
@@ -189,6 +196,7 @@ input.search-form:hover {
 
 
 .dropdown:hover .dropdown-menu {
+    transition: color 500ms, background-color 300ms;
     display: block;
 }
 
@@ -271,8 +279,9 @@ input.search-form:hover {
 }
 
 .footer{
-
-    color: whitesmoke;
+    color:whitesmoke;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 10px;
     background-color: #337ab7;
 }
 
