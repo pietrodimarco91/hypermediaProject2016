@@ -47,6 +47,7 @@ function getCategorie(categoria,callback){
             var nome;
             var immagine;
             var descrizione;
+            console.log(response);
             for(var i=0;i<categorie.length;i++){
                 nome=categorie[i].nome;
                 descrizione=categorie[i].descrizione;

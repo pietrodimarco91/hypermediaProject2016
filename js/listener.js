@@ -4,8 +4,16 @@ function click() {
         var url = window.location.href;
         var args = url.split('#')[1];
         var page = args.split('&')[0];
+        var index='';
+        console.log(args.split('&')[1]);
+        if(page=='categories'){
+            if(args.split('&')[1]=='devices')
+                index='0';
+            else
+                index='1';
+        }
         if(page!='') {
-            var newElm = $('li[class*="'+page+'_page"]');
+            var newElm = $('li[class*="'+page+index+'_page"]');
             var prevElm = $('li[class*="active"]');
             prevElm.removeClass('active');
             newElm.addClass('active');
@@ -14,6 +22,7 @@ function click() {
     };
 
 }
+
 
 function handle(args) {
     var parts = args.split('&');
@@ -25,16 +34,15 @@ function handle(args) {
                 case 'home':
                     click();
                     break;
-                case 'deviceCat':
-                    console.log(page);
-                    var categoria='';
-                    categoria+=page;
-                    getDeviceCat(categoria, function () {
+                case 'categories':
+                    getCategorie(special, function () {
                         click();
                     });
-                    break;
-                case 'categories':
-                    getCategorie(special);
+                case 'allDevices':
+                    getAllDevices(function () {
+                        click();
+                    });
+                    
                 default:
                     click();
             }
