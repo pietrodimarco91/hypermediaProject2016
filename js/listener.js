@@ -38,10 +38,19 @@ function handle(args) {
                     getCategorie(special, function () {
                         click();
                     });
+                case 'categorySmartphone':
+                    getAllDevices(function () {
+                        click();
+                    });
+                case 'categoryTablet':
+                    getAllDevices(function () {
+                        click();
+                    });
                 case 'allDevices':
                     getAllDevices(function () {
                         click();
                     });
+
                     
                 default:
                     click();

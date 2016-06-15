@@ -1,0 +1,76 @@
+
+
+<div class="container" >
+    <h1 style="margin-bottom: 10px">All Devices</h1>
+
+    <div class="filters"style="margin-bottom: 10px; margin-top: 10px; display: none">
+
+        <div class="ui-group">
+            <h2>Type</h2>
+            <div class="button-group js-radio-button-group" data-filter-group="type">
+                <button class="button" data-filter="">any</button>
+                <button class="button is-checked"  data-filter=".smartphone">smartphone</button>
+                <button class="button" id="tablet" data-filter=".tablet">tablet</button>
+                <button class="button" data-filter=".tv">tv</button>
+            </div>
+        </div>
+
+        <div class="ui-group">
+            <h2>Brand</h2>
+            <div class="button-group js-radio-button-group" data-filter-group="brand">
+                <button class="button is-checked" data-filter="">any</button>
+                <button class="button" data-filter=".apple">Apple</button>
+                <button class="button" data-filter=".huawei">Huawei</button>
+                <button class="button" data-filter=".samsung">Samsung</button>
+            </div>
+        </div>
+
+        <div class="ui-group">
+            <h2>OS<h3>(not implemented)</h3></h2>
+            <div class="button-group js-radio-button-group" data-filter-group="brand">
+                <button class="button is-checked" data-filter="">android</button>
+                <button class="button" data-filter="">IOS</button>
+                <button class="button" data-filter="">Microsoft</button>
+            </div>
+        </div>
+
+        <div class="ui-group">
+            <h2>Cost<h3>(not implemented)</h3></h2>
+            <div class="button-group js-radio-button-group" data-filter-group="brand">
+                <button class="button is-checked" data-filter="">any</button>
+                <button class="button" data-filter="">>500</button>
+                <button class="button" data-filter=""><500</button>
+                <button class="button" data-filter=""><250</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid" style="position: relative">
+
+        <div class="apple allDevices_img0" style="display: none"></div>
+        <div class="apple allDevices_img1"style="display: none"></div>
+        <div class="device tablet apple allDevices_img2"></div>
+        <div class="device tablet apple allDevices_img3"></div>
+
+        <div class="allDevices_img4"style="display: none"></div>
+        <div class="allDevices_img5"style="display: none"></div>
+        <div class="device tablet samsung allDevices_img6"></div>
+        <div class="device tablet samsung allDevices_img7"></div>
+
+        <div class="allDevices_img8"style="display: none"></div>
+        <div class="allDevices_img9"style="display: none"></div>
+
+
+
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/provaIsotope.js"></script>
+
+<script>
+    $("#tablet").click();
+</script>

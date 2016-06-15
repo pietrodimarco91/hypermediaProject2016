@@ -9,6 +9,8 @@ var $grid = $('.grid').isotope({
 // store filter for each group
 var filters = {};
 
+console.log('ciao');
+
 $('.filters').on( 'click', '.button', function() {
     var $this = $(this);
     // get group key
