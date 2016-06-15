@@ -1,35 +1,45 @@
 <div class="container">
-<h1>All Devices</h1>
+<h1 style="margin-bottom: 10px">All Devices</h1>
 
-<div class="filters">
+<div class="filters" style="margin-bottom: 10px; margin-top: 10px">
 
     <div class="ui-group">
-        <h3>Type</h3>
-        <div class="button-group js-radio-button-group" data-filter-group="color">
+        <h2>Type</h2>
+        <div class="button-group js-radio-button-group" data-filter-group="type">
             <button class="button is-checked" data-filter="">any</button>
-            <button class="button" data-filter=".red">red</button>
-            <button class="button" data-filter=".blue">blue</button>
-            <button class="button" data-filter=".yellow">yellow</button>
+            <button class="button" data-filter=".smartphone">smartphone</button>
+            <button class="button" data-filter=".tablet">tablet</button>
+            <button class="button" data-filter=".tv">tv</button>
         </div>
     </div>
 
     <div class="ui-group">
-        <h3>cost</h3>
-        <div class="button-group js-radio-button-group" data-filter-group="size">
+        <h2>Brand</h2>
+        <div class="button-group js-radio-button-group" data-filter-group="brand">
             <button class="button is-checked" data-filter="">any</button>
-            <button class="button" data-filter=".small">small</button>
-            <button class="button" data-filter=".wide">wide</button>
-            <button class="button" data-filter=".big">big</button>
-            <button class="button" data-filter=".tall">tall</button>
+            <button class="button" data-filter=".apple">Apple</button>
+            <button class="button" data-filter=".huawei">Huawei</button>
+            <button class="button" data-filter=".samsung">Samsung</button>
         </div>
     </div>
 
     <div class="ui-group">
-        <h3>tecnology</h3>
-        <div class="button-group js-radio-button-group" data-filter-group="shape">
+        <h2>OS</h2><h3>(not implemented)</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="brand">
             <button class="button is-checked" data-filter="">any</button>
-            <button class="button" data-filter=".round">round</button>
-            <button class="button" data-filter=".square">square</button>
+            <button class="button" data-filter=".apple">Apple</button>
+            <button class="button" data-filter=".huawei">Huawei</button>
+            <button class="button" data-filter=".samsung">Samsung</button>
+        </div>
+    </div>
+
+    <div class="ui-group">
+        <h2>Cost</h2><h3>(not implemented)</h3>
+        <div class="button-group js-radio-button-group" data-filter-group="brand">
+            <button class="button is-checked" data-filter="">any</button>
+            <button class="button" data-filter=".apple">Apple</button>
+            <button class="button" data-filter=".huawei">Huawei</button>
+            <button class="button" data-filter=".samsung">Samsung</button>
         </div>
     </div>
 
@@ -37,25 +47,21 @@
 
 <div class="grid" style="position: relative">
 
-    <div class="color-shape small round blue allDevices_img1">
-        <a href="index.html" class=" small round red allDevices_img0"></a>
-    </div>
-    <div class="color-shape small round blue allDevices_img1"></div>
-    <div class="color-shape small round yellow allDevices_img2"></div>
-    <div class="color-shape small square red allDevices_img3"></div>
-    <div class="color-shape small square blue allDevices_img4"></div>
-    <div class="color-shape small square yellow allDevices_img5"></div>
-    <div class="color-shape wide round red allDevices_img6"></div>
-    <div class="color-shape wide round blue allDevices_img7"></div>
-    <div class="color-shape wide round yellow allDevices_img8"></div>
-    <div class="color-shape wide square red allDevices_img9"></div>
-    <div class="color-shape wide square blue allDevices_img10"></div>
-    <div class="color-shape wide square yellow allDevices_img11"></div>
-    <div class="color-shape big round red allDevices_img12"></div>
-    <div class="color-shape big round blue allDevices_img13"></div>
-    <div class="color-shape big round yellow allDevices_img14"></div>
-    <div class="color-shape tall round blue allDevices_img15"></div>
-    <div class="color-shape tall square blue allDevices_img16"></div>
+    <div class="device smartphone apple allDevices_img0"></div>
+    <div class="device smartphone apple allDevices_img1"></div>
+    <div class="device tablet apple allDevices_img2"></div>
+    <div class="device tablet apple allDevices_img3"></div>
+
+    <div class="device smartphone samsung allDevices_img4"></div>
+    <div class="device smartphone samsung allDevices_img5"></div>
+    <div class="device tablet samsung allDevices_img6"></div>
+    <div class="device tablet samsung allDevices_img7"></div>
+
+    <div class="device smartphone huawei allDevices_img8"></div>
+    <div class="device smartphone huawei allDevices_img9"></div>
+
+
+
 </div>
 
 

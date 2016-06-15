@@ -2,7 +2,7 @@
 
 require('connect_db.php');
 
-$query="SELECT * FROM products";
+$query="SELECT image FROM products";
 $result=mysqli_query($dbc,$query);
 if($result){
 
