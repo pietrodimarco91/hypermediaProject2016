@@ -34,7 +34,11 @@ function handle(args) {
                 case 'home':
                     click();
                     break;
-                case ('categories'||'categoriesSL'):
+                case 'categories':
+                    getCategorie(special, function () {
+                        click();
+                    });
+                case 'categoriesSL':
                     getCategorie(special, function () {
                         click();
                     });
