@@ -50,8 +50,10 @@ function handle(args) {
                     getAllDevices(function () {
                         click();
                     });
-
-                    
+                case 'allSL':
+                    getAllSL(function () {
+                        click();
+                    });
                 default:
                     click();
             }

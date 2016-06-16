@@ -85,3 +85,27 @@ function getAllDevices(callback){
     });
 
 }
+
+
+function getAllSL(callback){
+
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getAllSL.php",
+        success: function(response) {
+            var res=JSON.parse(response);
+            var allSL_img;
+            for(var i=0;i<res.length;i++){
+                allSL_img=res[i].image;
+                $(".allSL_img"+i).html(allSL_img);
+            }
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+
+}

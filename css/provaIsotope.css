@@ -91,20 +91,50 @@ body {
     margin-right: 20px;
 }
 
-/* color-shape */
+/* devices */
 
 .device {
     width: 250px;
     height: 300px;
     margin: 5px;
+    border: 2px solid rgb(0,0,0,0.5);
     float: left;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+    border-color:transparent;
+    transition:			box-shadow 200ms ease-out;
+    -moz-transition:	box-shadow 200ms ease-out;
+    -webkit-transition:	box-shadow 200ms ease-out;
+    -o-transition:		box-shadow 200ms ease-out;
+}
+
+.implemented{
+    box-shadow:0 0 5px red;
+}
+
+.implemented:hover{
+    box-shadow:0 0 20px red;
+}
+
+.device:hover{
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    border-color:transparent;
+    transition:			box-shadow 200ms ease-out;
+    -moz-transition:	box-shadow 200ms ease-out;
+    -webkit-transition:	box-shadow 200ms ease-out;
+    -o-transition:		box-shadow 200ms ease-out;
 }
 .device > img {
     width: 250px;
     height: 250px;
-    box-shadow:0 0 20px rgba(0,0,0,0.2);
-    border-color:transparent;
+}
 
+.device>h3{
+    margin-top: 10px;
+
+}
+
+.device>a>h3{
+    margin-top: 10px;
 }
 
 .filters.button{
@@ -112,9 +142,7 @@ body {
     font-size: 10px;
 }
 
-.device>img{
-    transition:			box-shadow 200ms ease-out;
-    -moz-transition:	box-shadow 200ms ease-out;
-    -webkit-transition:	box-shadow 200ms ease-out;
-    -o-transition:		box-shadow 200ms ease-out;
+.device > a > img {
+    width: 250px;
+    height: 250px;
 }
