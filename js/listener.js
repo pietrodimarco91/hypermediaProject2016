@@ -34,7 +34,7 @@ function handle(args) {
                 case 'home':
                     click();
                     break;
-                case 'categories':
+                case ('categories'||'categoriesSL'):
                     getCategorie(special, function () {
                         click();
                     });
@@ -42,7 +42,7 @@ function handle(args) {
                     getAllDevices(function () {
                         click();
                     });
-                case 'categoryTablet':
+                case 'categoryTablet' :
                     getAllDevices(function () {
                         click();
                     });
