@@ -32,7 +32,9 @@ function handle(args) {
         $(".main").load(page + '.html', function () {
             switch (page) {
                 case 'home':
-                    click();
+                    getAllDevices(function () {
+                        click();
+                    });
                     break;
                 case 'categories':
                     getCategorie(special, function () {

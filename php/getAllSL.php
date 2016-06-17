@@ -2,7 +2,7 @@
 
 require('connect_db.php');
 
-$query="SELECT image FROM products";
+$query="SELECT titolo,link FROM sl_services";
 $result=mysqli_query($dbc,$query);
 if($result){
 

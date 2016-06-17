@@ -94,8 +94,8 @@ body {
 /* devices */
 
 .device {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     margin: 5px;
     border: 10px solid rgb(0,0,0,0.5);
     background-color: white;
@@ -129,8 +129,8 @@ body {
     -o-transition:		box-shadow 200ms ease-out;
 }
 .device > img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .device>h3{
@@ -148,6 +148,6 @@ body {
 }
 
 .device > a > img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
