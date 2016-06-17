@@ -46,6 +46,10 @@ function handle(args) {
                     getAllDevices(function () {
                         click();
                     });
+                case 'categoryPromo':
+                    getAllDevices(function () {
+                        click();
+                    });
                 case 'categoryTablet' :
                     getAllDevices(function () {
                         click();

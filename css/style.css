@@ -7,12 +7,9 @@ body {
     color:  #337ab7;
     margin: 0;
     padding: 0;
-    background-image: url("/img/back.jpg");
+    background-image: url(../img/back-cloud.jpg);
 }
 
-.main{
-    background-image: url("/img/back.jpg");
-}
 
 
 
@@ -48,7 +45,6 @@ body {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    -webkit-animation: fadeInUp 400ms;
     animation: flipInX 400ms;
 }
 
