@@ -64,6 +64,10 @@ function handle(args) {
                     getAllSL(function () {
                         click();
                     });
+                case 'categorySL':
+                    getCategorySL(special,function () {
+                        click();
+                    });
                 default:
                     click();
             }
