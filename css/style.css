@@ -245,7 +245,7 @@ input.search-form:hover {
 }
 
 .center.slider > div {
-    background-color: white;
+    background-color: trasparent;
 }
 
 .navbar-brand img{
@@ -338,8 +338,43 @@ input.search-form:hover {
     color: #fff;
 }
 
+.slick-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs{
+    border-bottom: transparent;
+}
+
+.tabs>li>a{
+    height: 50px;
+    background-color: rgba(212, 63, 58, 0.7) ;
+    border: 1px solid red;
+    color: whitesmoke;
+    border-bottom-color:transparent;
+
+}
 
 
+.tabs>li>a:hover,.tabs>li>a:focus,
+.tabs>li>a:active{
+    background-color: rgba(212, 63, 58, 1) ;
+}
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: rgba(212, 63, 58, 1) ;
+    color:whitesmoke;
+}
+
+
+
+.tabs>li.active>a{
+    border: 1px solid red;
+    border-bottom-color:transparent;
+
+}
 
 /* Responsive Styles */
 
