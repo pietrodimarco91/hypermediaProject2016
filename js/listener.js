@@ -12,6 +12,7 @@ function click() {
             else
                 index='1';
         }
+        
         if(page!='') {
             var newElm = $('li[class*="'+page+index+'_page"]');
             var prevElm = $('li[class*="active"]');
@@ -32,9 +33,7 @@ function handle(args) {
         $(".main").load(page + '.html', function () {
             switch (page) {
                 case 'home':
-                    getAllDevices(function () {
-                        click();
-                    });
+                    click();
                     break;
                 case 'categories':
                     getCategorie(special, function () {

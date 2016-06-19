@@ -75,7 +75,7 @@ body {
 /* ui group */
 
 .ui-group {
-    display: inline-block;
+    display: inline-table;
 }
 
 .ui-group h3 {
@@ -99,7 +99,6 @@ body {
     margin: 5px;
     border: 10px solid rgb(0,0,0,0.5);
     background-color: white;
-
     float: left;
     box-shadow:0 0 5px rgba(0,0,0,0.2);
     border-color:transparent;
