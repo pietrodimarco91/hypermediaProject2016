@@ -63,12 +63,12 @@ function getAllSL(callback){
         url: "php/getAllSL.php",
         success: function(response) {
             var res=JSON.parse(response);
-            var allSL;
+            var link;
             var title;
             for(var i=0;i<res.length;i++){
-                allSL=res[i].link;
                 title=res[i].titolo;
-                $(".allSL"+i).html(allSL+'<h3 align="center">'+title+'</h3>');
+                link=res[i].link;
+                $(".allSL"+i).append('<a href="#">'+link+'</a><h3 align="center">'+title+'</h3>');
             }
             callback();
         },
@@ -91,13 +91,11 @@ function getCategorySL(categoria,callback){
         success: function(response) {
             var categorie=JSON.parse(response);
             var title;
-            var descrizione;
             var link;
             for(var i=0;i<categorie.length;i++){
                 title=categorie[i].titolo;
-                descrizione=categorie[i].descrizione;
                 link=categorie[i].link;
-                $(".catSL").append('<div class="col-md-12"style="animation: fadeIn 600ms">  <div class="panel panel-default"> <div class="panel-heading "> <h3>'+title+'</h3> </div> <div class="panel-body "> <div class="col-md-4"style="animation: fadeIn 600ms">'+link+'</div><div class="col-md-8"style="animation: fadeIn 600ms"> <h4>'+descrizione+'</h4> </div> </div></div> </div>');
+                $(".grid").append('<div class="serviceSL "><a href="#">'+link+'</a><h3 align="center">'+title+'</h3></div>');
             }
             callback();
         },
