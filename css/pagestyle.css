@@ -1,0 +1,33 @@
+
+h1{
+    color: blue;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#box{
+
+    height: 200px;
+    width: 200px;
+    border: 5px solid;
+    padding:20px;
+    margin:20px;
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display: inline-block;
+    color: #0000FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+    background-color:firebrick;
+    border-radius: 20px;
+    transition-duration: 1s;
+}
