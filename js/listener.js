@@ -40,28 +40,39 @@ function handle(args) {
                     getCategorie(special, function () {
                         click();
                     });
+                    break;
                 case 'categoriesSL':
                     getCategorie(special, function () {
                         click();
                     });
+                    break;
                 case 'categorySmartphone':
                     getAllDevices(function () {
                         click();
                     });
+                    break;
                 case 'categoryPromo':
                     getAllDevices(function () {
                         click();
                     });
+                    break;
                 case 'categoryTablet' :
                     getAllDevices(function () {
                         click();
                     });
+                    break;
                 case 'allDevices':
                     getAllDevices(function () {
                         click();
                     });
+                    break;
                 case 'allSL':
                     getAllSL(function () {
+                        click();
+                    });
+                    break;
+                case 'categorySL':
+                    getCategorySL(special,function () {
                         click();
                     });
                 default:

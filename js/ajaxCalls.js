@@ -63,12 +63,12 @@ function getAllSL(callback){
         url: "php/getAllSL.php",
         success: function(response) {
             var res=JSON.parse(response);
-            var allSL;
+            var link;
             var title;
             for(var i=0;i<res.length;i++){
-                allSL=res[i].link;
                 title=res[i].titolo;
-                $(".allSL"+i).html(allSL+'<h3 align="center">'+title+'</h3>');
+                link=res[i].link;
+                $(".allSL"+i).append('<a href="#">'+link+'</a><h3 align="center">'+title+'</h3>');
             }
             callback();
         },
@@ -79,3 +79,29 @@ function getAllSL(callback){
     });
 
 }
+
+
+function getCategorySL(categoria,callback){
+
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCategorySL.php", //Relative or absolute path to file.php file
+        data: {categoria:categoria},
+        success: function(response) {
+            var categorie=JSON.parse(response);
+            var title;
+            var link;
+            for(var i=0;i<categorie.length;i++){
+                title=categorie[i].titolo;
+                link=categorie[i].link;
+                $(".grid").append('<div class="serviceSL "><a href="#">'+link+'</a><h3 align="center">'+title+'</h3></div>');
+            }
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    })
+};
