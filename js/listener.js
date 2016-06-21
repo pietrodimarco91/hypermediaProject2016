@@ -15,6 +15,7 @@ function click() {
         
         if(page!='') {
             var newElm = $('li[class*="'+page+index+'_page"]');
+            console.log(newElm);
             var prevElm = $('li[class*="active"]');
             prevElm.removeClass('active');
             newElm.addClass('active');
@@ -45,6 +46,22 @@ function handle(args) {
                         click();
                     });
                     break;
+                case 'catAS':
+                    getASCategoryMobile(special, function () {
+                        click();
+                    });
+                    break;
+                case 'categoriesAssistance':
+                    getCategorie(special, function () {
+                        click();
+                    });
+                    break;
+                case 'categoriesAS':
+                    getCategoriesAS(special, function () {
+                        click();
+                        initIsotope();
+                    });
+                    break;
                 case 'categorySmartphone':
                     getAllDevices(function () {
                         click();
@@ -52,6 +69,11 @@ function handle(args) {
                     break;
                 case 'categoryPromo':
                     getAllDevices(function () {
+                        click();
+                    });
+                    break;
+                case 'categoryAS':
+                    getCategoryAS(special, function () {
                         click();
                     });
                     break;
@@ -67,6 +89,33 @@ function handle(args) {
                     break;
                 case 'allSL':
                     getAllSL(function () {
+                        click();
+                    });
+                    break;
+                case 'allAssistance':
+                    getAllAS(function () {
+                        click();
+                        initIsotope();
+                    });
+                    
+                    break;
+                case 'pageSL':
+                    getPageSL(special, function () {
+                        click();
+                    });
+                    break;
+                case 'neededDev':
+                    getAllNeededDevices(special, function () {
+                        click();
+                    });
+                    break;
+                case 'ASHigh':
+                    getHigh(function () {
+                        click();
+                    });
+                    break;
+                case 'devicePage':
+                    getDevice(special,function () {
                         click();
                     });
                     break;

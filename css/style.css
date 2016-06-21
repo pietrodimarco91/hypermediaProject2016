@@ -240,13 +240,6 @@ input.search-form:hover {
 .container h1{
     color:  #337ab7;
 }
-.slick-track {
-    background: transparent;
-}
-
-.center.slider > div {
-    background-color: trasparent;
-}
 
 .navbar-brand img{
     padding: 0px 0px;
@@ -264,14 +257,14 @@ input.search-form:hover {
     width: 100%;
 }
 
-.slick-slide {
+/*.slick-slide {
     margin: 20px 20px;
 }
 
 .slick-slide img {
     width: 100%;
 
-}
+}*/
 
 #main{
     padding-bottom:100px;
@@ -306,6 +299,7 @@ input.search-form:hover {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding-left: 10px;
     background-color: #337ab7;
+
 }
 
 #wrap
@@ -373,6 +367,20 @@ input.search-form:hover {
 .tabs>li.active>a{
     border: 1px solid red;
     border-bottom-color:transparent;
+
+}
+
+.fade {
+    overflow: hidden;
+}
+
+.shadow {
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    border-color:transparent;
+    transition:			box-shadow 200ms ease-out;
+}
+
+.filters{
 
 }
 

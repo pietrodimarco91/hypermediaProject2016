@@ -3,11 +3,11 @@
 require('connect_db.php');
 
 if (isset($_POST['categoria'])) {
-    $nomeCategoria=$_POST['categoria'];
+    $categoriaPost=$_POST['categoria'];
 }
 else
     echo "Error, table wasn't set correctly";
-$query="SELECT titolo,referiment,link,dist,nomeCat FROM sl_services WHERE categoria='".$nomeCategoria."'";
+$query="SELECT titolo,descrizione,purpouse,implement,faq,categoria,link FROM assistance_services WHERE purpouse='".$categoriaPost."'";
 $result=mysqli_query($dbc,$query);
 if($result){
 
@@ -28,4 +28,3 @@ else
 $dbc->close();
 
 ?>
-
