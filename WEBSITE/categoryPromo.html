@@ -1,0 +1,102 @@
+<div class="container-fluid">
+<div class="row" style="animation: fadeIn 400ms">
+    <div class="col-lg-12">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Our Promotions
+            </h1>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i>Filter</h4>
+                </div>
+                <div class="panel-body">
+
+                    <div class="filters" >
+
+                        <div class="ui-group">
+                            <h3>Type</h3>
+                            <div class="button-group js-radio-button-group" data-filter-group="type">
+                                <button class="button is-checked" data-filter="">any</button>
+                                <button class="button"  data-filter=".smartphone">smartphone</button>
+                                <button class="button" data-filter=".tablet">tablet</button>
+                                <button class="button" data-filter=".tv">tv</button>
+                            </div>
+                        </div>
+
+                        <div class="ui-group" style="display: none">
+                            <h3>Type</h3>
+                            <div class="button-group js-radio-button-group" data-filter-group="promo">
+                                <button class="button is-checked" id="promo" data-filter=".promo">any</button>
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <h3>Brand</h3>
+                            <div class="button-group js-radio-button-group" data-filter-group="brand">
+                                <button class="button is-checked" data-filter="">any</button>
+                                <button class="button" data-filter=".apple">Apple</button>
+                                <button class="button" data-filter=".huawei">Huawei</button>
+                                <button class="button" data-filter=".samsung">Samsung</button>
+                            </div>
+                        </div>
+
+                        <div class="ui-group">
+                            <h3>OS(not implemented)</h3>
+                            <div class="button-group js-radio-button-group" data-filter-group="brand">
+                                <button class="button is-checked" data-filter="">android</button>
+                                <button class="button" data-filter="">IOS</button>
+                                <button class="button" data-filter="">Microsoft</button>
+                            </div>
+                        </div>
+
+                        <div class="ui-group"style="padding-bottom: 20px">
+                            <h3>Cost(not implemented)</h3>
+                            <div class="button-group js-radio-button-group" data-filter-group="brand">
+                                <button class="button is-checked" data-filter="">any</button>
+                                <button class="button" data-filter="">>500</button>
+                                <button class="button" data-filter=""><500</button>
+                                <button class="button" data-filter=""><250</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-9">
+
+                <div class="grid" style="position: relative">
+
+                    <div class="device smartphone apple implemented"style="display: none"><a href="#" class="allDevices_img0"></a></div>
+                    <div class="device smartphone huawei allDevices_img1"style="display: none"></div>
+                    <div class="device smartphone promo lg allDevices_img2"></div>
+                    <div class="device smartphone sony allDevices_img3"style="display: none"></div>
+                    <div class="device smartphone promo google allDevices_img4"></div>
+                    <div class="device smartphone samsung allDevices_img5"style="display: none"></div>
+                    <div class="device smartphone lg allDevices_img6 "style="display: none"></div>
+                    <div class="device smartphone zte allDevices_img7"style="display: none"></div>
+                    <div class="device smartphone allDevices_img8"style="display: none"></div>
+                    <div class="device tablet apple implemented" style="display: none"><a href="#" class="allDevices_img9"></a></div>
+                    <div class="device tablet huawei promo allDevices_img10" ></div>
+                    <div class="device tablet samsung allDevices_img11"style="display: none"></div>
+                    <div class="device tablet apple allDevices_img12"style="display: none"></div>
+                    <div class="device tablet samsung promo allDevices_img13"></div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/provaIsotope.js"></script>
+
+
+<script>
+    $("#promo").click();
+</script>

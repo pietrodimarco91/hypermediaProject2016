@@ -1,0 +1,88 @@
+
+<!-- Page Content -->
+<div class="container">
+    <h1>Our new smartphones</h1>
+<section class="center slider">
+    <div class="slider-device implemented">
+        <a href="#devicePage&1">
+        <img src="img/smartphone/apple0.jpg" class="flex slick-img">
+        <h3 align="center">iPhone 6s</h3>
+        </a>
+    </div>
+    <div class="slider-device implemented">
+        <a href="#devicePage&7">
+        <img src="img/smartphone/s7.jpg" class="flex slick-img">
+        <h3 align="center">SamsungS7</h3>
+        </a>
+    </div>
+    <div class="slider-device">
+        <img src="img/smartphone/nexus0.jpg" class="flex slick-img">
+        <h3 align="center">Nexus5</h3>
+    </div>
+    <div class="slider-device">
+        <img src="img/smartphone/huawei0.jpg" class="flex slick-img">
+        <h3 align="center">Huawei P9</h3>
+    </div>
+
+    <div class="slider-device">
+        <img src="img/smartphone/huawei1.jpg" class="flex slick-img">
+        <h3 align="center">Huawei MateS</h3>
+    </div>
+
+</section>
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                TIM For YOU
+            </h1>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Where we are</h4>
+                </div>
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Recharge online</h4>
+                </div>
+                <div class="panel-body">
+                    <input type="number" class="form-control" placeholder="Your phone number" >
+                    <div class="input-group">
+                        <select class="combobox form-control" required="required" style="display: none;">
+                         <option value="" selected="selected">10€</option>
+                            <option value="AL">20€</option>
+                          <option value="AK">30€</option>
+                          <option value="AZ">40€</option>
+                     </select>
+                </div>
+                    <a href="#" class="btn btn-default">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".center").slick({
+            autoplay:true,
+            dots:true,
+            autoplaySpeed: 2500,
+            slidesToShow: 4,
+            arrows: true,
+        });
+        $('.combobox').combobox();
+    });
+</script>
+
+
